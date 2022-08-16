@@ -27,7 +27,7 @@ public class MonthData {
     public int getBestStreak(int targetDaysNumber) {
         int streak = 0;
         int tempCounter = 0;
-        for (int i = 0; i < daysArray.length - 1; i++) {
+        for (int i = 0; i < daysArray.length; i++) {
             if (daysArray[i] >= targetDaysNumber) {
                 tempCounter++;
                 if (tempCounter > streak) {

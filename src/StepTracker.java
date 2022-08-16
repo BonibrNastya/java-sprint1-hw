@@ -29,6 +29,10 @@ public class StepTracker {
         System.out.println("Целевое количество шагов изменено на " +targetStepNumber);
     }
     public void monthStatistics(int monthNumber){
+        if (monthNumber<0 || monthNumber>11) {
+            System.out.println("Вы ввели неверное значение.");
+            return;
+        }
         MonthData month = months[monthNumber];
         month.statistics();
         System.out.println();
